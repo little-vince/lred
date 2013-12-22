@@ -8,11 +8,11 @@ Screenshots
 
 ### Visitors
 This is what the plugin looks like to the visitors on your blog.
-![Visitor Screenshot](screenshots/visitor.jpg?raw=true "What visitors see.")
+![Visitor Screenshot](screenshots/visitor.png?raw=true "What visitors see.")
 
 ### You
 This is what the plugin looks like to you, the owner of the blog.
-![Visitor Screenshot](screenshots/owner.jpg?raw=true "What you see.")
+![Visitor Screenshot](screenshots/owner.png?raw=true "What you see.")
 
 Installation
 ------------
