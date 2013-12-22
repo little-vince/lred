@@ -19,13 +19,17 @@ Installation
 
 ### Step 1 
 Add the following code to your Tumblr theme, right before the `</head>` tag.
-  <script type="text/javascript" src="http://little-vince.tumblr.com/lred.js"></script>
+```html
+<script type="text/javascript" src="http://little-vince.tumblr.com/lred.js"></script>
+```
 ### Step 2
 Place the following code somewhere between the `{block:Date}` and `{/block:Date}` tags.
-  <div class="reblogframe">
-    <iframe id="share{PostID}" scrolling="no" width="100%" height="25px" frameborder="0"></iframe>
-    <script type="text/javascript">document.getElementById("share{PostID}").src=vince("{ReblogURL}","{Permalink}")</script>
-  </div> 
+```html
+<div class="reblogframe">
+  <iframe id="share{PostID}" scrolling="no" width="100%" height="25px" frameborder="0"></iframe>
+  <script type="text/javascript">document.getElementById("share{PostID}").src=vince("{ReblogURL}","{Permalink}")</script>
+</div> 
+```
 Note: If you have more than one set of those tags then you will need to work out which one is best to put it in.
 
 Remarks
