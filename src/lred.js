@@ -1,11 +1,12 @@
 /*
 	LIKE, REBLOG, EDIT AND DELETE (LRED) BUTTON UNDER EVERY POST
-	LRED (c) 2014 little-vince
 	little-vince.tumblr.com
 	Version: 0.3
 	Last edited: 14 January 2014
 
-	This copyright section and all credits in the script must be included in modifications or redistributions of this script.
+	Copyright (c) 2014 little-vince
+
+	Released under the MIT License, this copyright section and all credits in the script must be included in modifications or redistributions of this script.
 */
 
 function vince(url, plink) {
