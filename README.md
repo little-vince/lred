@@ -1,10 +1,8 @@
-LRED
-====
+#LRED
 
 LRED (Like, Reblog, Edit, Delete) is a javascript plugin for your Tumblr that adds Like, Reblog, Edit and Delete buttons under each of your posts. This may be useful when doing mass post editing, or to avoid having users click into the permalink page in order to like or reblog your post.
 
-Screenshots
------------
+##Screenshots
 
 ### Visitors
 This is what the plugin looks like to the visitors on your blog.
@@ -14,8 +12,7 @@ This is what the plugin looks like to the visitors on your blog.
 This is what the plugin looks like to you, the owner of the blog.
 ![Visitor Screenshot](screenshots/owner.png?raw=true "What you see.")
 
-Installation
-------------
+##Installation
 
 ### Step 1 
 Add the following code to your Tumblr theme, right before the `</head>` tag.
@@ -30,12 +27,10 @@ Place the following code somewhere between the `{block:Date}` and `{/block:Date}
 </div> 
 ```
 
-Author
-------
+##License
 
-[little-vince](http://www.little-vince.tumblr.com)
+This script is released under the [MIT License](http://opensource.org/licenses/MIT).
 
-Copyright
----------
+##Copyright
 
-Copyright 2014 little-vince
+Copyright (c) 2014 [little-vince](http://www.little-vince.tumblr.com)
