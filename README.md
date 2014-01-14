@@ -26,14 +26,9 @@ Add the following code to your Tumblr theme, right before the `</head>` tag.
 Place the following code somewhere between the `{block:Date}` and `{/block:Date}` tags. If you have more than one set of those tags then you will need to work out which one is best to put it in.
 ```html
 <div class="reblogframe">
-  <iframe id="share{PostID}" scrolling="no" width="100%" height="25px" frameborder="0"></iframe>
-  <script type="text/javascript">document.getElementById("share{PostID}").src=vince("{ReblogURL}","{Permalink}")</script>
+  <iframe class="lred" scrolling="no" width="100%" height="25px" frameborder="0" data-plink="{Permalink}" data-reblog="{ReblogURL}"></iframe>
 </div> 
 ```
-
-Remarks
--------
-This script uses code from [yonishin's reblog button script](http://snipt.net/yonishin/add-a-reblog-button-or-html-link-to-tumblr-theme-javascript-html/) which was written before the addition of the ReblogURL tag.
 
 Author
 ------
@@ -43,4 +38,4 @@ Author
 Copyright
 ---------
 
-Copyright 2013 little-vince
+Copyright 2014 little-vince
