@@ -28,10 +28,13 @@ Place the following code somewhere between the `{block:Date}` and `{/block:Date}
 </div> 
 ```
 
+### Step 3
+That's it! You might need to edit your theme a bit to make it fit in a little more but assuming all things went well, it should look vaguely similar to the screenshots up there.
+
 ## Changelog
 
 ### 0.4
-* 140122 - Added compatibility with infinite scroll
+* 140122 - Added support for infinite scroll
 
 ### 0.3
 * 140114 - Improved performance and simplified installation
