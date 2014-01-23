@@ -27,8 +27,8 @@ Add the following code to your Tumblr theme, right before the `</head>` tag.
 Place the following code somewhere between the `{block:Date}` and `{/block:Date}` tags. If you have more than one set of those tags then you will need to work out which one is best to put it in.
 ```html
 <div class="reblogframe">
-  <iframe class="lred" scrolling="no" width="100%" height="25px" frameborder="0" data-plink="{Permalink}" data-reblog="{ReblogURL}"></iframe>
-</div> 
+  <iframe class="lred" scrolling="no" width="100%" height="25px" frameborder="0" data-plink="{Permalink}" data-reblog="{ReblogURL}" data-user="{Name}" data-pic="{URLEncodedPortraitURL-64}"></iframe>
+</div>
 ```
 
 ### Step 3
