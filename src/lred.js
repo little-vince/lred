@@ -1,7 +1,7 @@
 /*
 	LIKE, REBLOG, EDIT AND DELETE (LRED) BUTTON UNDER EVERY TUMBLR POST
 	little-vince.tumblr.com
-	Version: 0.41
+	Version: 0.5
 	Last edited: 23 January 2014
 
 	Copyright (c) 2014 little-vince
@@ -15,7 +15,7 @@ function addSource(target) {
 	var elements = target.querySelectorAll(".lred");
 	for (; marker < elements.length; marker++) {
 		var e = elements[marker];
-		e.src = vince(e.getAttribute('data-reblog'), e.getAttribute('data-plink'));
+		e.src = vince(e.getAttribute("data-reblog"), e.getAttribute("data-plink")) + "&name=" + e.getAttribute("data-user") + "&avatar=" + e.getAttribute("data-pic");
 	}
 }
 
