@@ -37,21 +37,21 @@ That's it! You might need to edit your theme a bit to make it fit in a little mo
 Changelog
 ---------
 
-### 0.5
-* 140123 - Added support for anonymous users (people who aren't logged in)
-    - Requires new HTML update (above)
+### 0.5 (140123)
+* Added support for anonymous users (people who aren't logged in)
+* Fixed issue where script was not being executed in Chrome
 
-### 0.4
-* 140122 - Added support for infinite scroll
+### 0.4 (140122)
+* Added support for infinite scroll
 
-### 0.3
-* 140114 - Improved performance and simplified installation
+### 0.3 (140114)
+* Improved performance and simplified installation
 
-### 0.2
-* 131222 - Fixed issue caused by Tumblr update
+### 0.2 (131222)
+* Fixed issue caused by Tumblr update
 
-### 0.1
-* 121019 - Initial release
+### 0.1 (121019)
+* Initial release
 
 License
 -------
