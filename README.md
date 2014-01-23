@@ -27,7 +27,7 @@ Add the following code to your Tumblr theme, right before the `</head>` tag.
 Place the following code somewhere between the `{block:Date}` and `{/block:Date}` tags. If you have more than one set of those tags then you will need to work out which one is best to put it in.
 ```html
 <div class="reblogframe">
-  <iframe class="lred" scrolling="no" width="100%" height="25px" frameborder="0" data-plink="{Permalink}" data-reblog="{ReblogURL}" data-user="{Name}" data-pic="{URLEncodedPortraitURL-64}"></iframe>
+  <iframe class="lred" scrolling="no" width="100%" height="26px" frameborder="0" data-plink="{Permalink}" data-reblog="{ReblogURL}" data-user="{Name}" data-pic="{URLEncodedPortraitURL-64}"></iframe>
 </div>
 ```
 
@@ -36,6 +36,9 @@ That's it! You might need to edit your theme a bit to make it fit in a little mo
 
 Changelog
 ---------
+
+### 0.5
+* 140123 - Added support for anonymous users (people who aren't logged in)
 
 ### 0.4
 * 140122 - Added support for infinite scroll
