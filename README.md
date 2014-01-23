@@ -39,6 +39,7 @@ Changelog
 
 ### 0.5
 * 140123 - Added support for anonymous users (people who aren't logged in)
+    - Requires new HTML update (above)
 
 ### 0.4
 * 140122 - Added support for infinite scroll
