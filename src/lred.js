@@ -23,8 +23,8 @@ function vince(url, plink) {
 }
 
 /**
- * Adds the source of the iframes in a node
- * @param {node} target The node to search for iframes in
+ * Adds the source of the iframes in an element
+ * @param {element} target The element to search for iframes in
  * @return {boolean} True if successful
  */
 function addSource(target) {
@@ -41,12 +41,12 @@ function addSource(target) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-	// only continue if the first call to addSource was successful
+	// only continue if the first call to addSource() was successful
 	if (!addSource(document.body)) {
 		return;
 	}
 
-	// create an observer that will trigger addSource whenever infinite scroll is enabled
+	// create an observer that will trigger addSource() whenever infinite scroll is enabled
 	var observer = new MutationObserver(function(mutations) {
 		mutations.forEach(function(mutation) {
 			if (mutation.type === 'childList') {
