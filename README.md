@@ -37,6 +37,9 @@ That's it! You might need to edit your theme a bit to make it fit in a little mo
 Changelog
 ---------
 
+#### 0.6 (140204)
+* Added documentation and a check
+
 #### 0.5 (140123)
 * Added support for anonymous users (people who aren't logged in)
 * Fixed issue where script was not being executed in Chrome
