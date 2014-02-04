@@ -9,24 +9,44 @@
 	Released under the MIT License, this copyright section and all credits in the script must be included in modifications or redistributions of this script.
 */
 
-var marker = 0;
+var marker = 0; // keeps track of which iframes have been fixed
 
-function addSource(target) {
-	var elements = target.querySelectorAll(".lred");
-	for (; marker < elements.length; marker++) {
-		var e = elements[marker];
-		e.src = vince(e.getAttribute("data-reblog"), e.getAttribute("data-plink")) + "&name=" + e.getAttribute("data-user") + "&avatar=" + e.getAttribute("data-pic");
-	}
-}
-
+/**
+ * Determines the url of the iframe
+ * @param {string} url The reblog url of the post
+ * @param {string} plink The permalink of the post
+ * @return {string} The url of the iframe.
+ */
 function vince(url, plink) {
 	var id = "&pid=" + url.split('/')[4] + "&rk=" + url.split('/')[5];
 	return "http://assets.tumblr.com/assets/html/iframe/o.html?src=" + encodeURIComponent(plink) + id;
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-	addSource(document.body);
+/**
+ * Adds the source of the iframes in a node
+ * @param {node} target The node to search for iframes in
+ * @return {boolean} True if successful
+ */
+function addSource(target) {
+	var elements = target.querySelectorAll("iframe.lred");
+	if (elements.length < 1) {
+		return false;
+	}
 
+	for (; marker < elements.length; marker++) {
+		var e = elements[marker];
+		e.src = vince(e.getAttribute("data-reblog"), e.getAttribute("data-plink")) + "&name=" + e.getAttribute("data-user") + "&avatar=" + e.getAttribute("data-pic");
+	}
+	return true;
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+	// only continue if the first call to addSource was successful
+	if (!addSource(document.body)) {
+		return;
+	}
+
+	// create an observer that will trigger addSource whenever infinite scroll is enabled
 	var observer = new MutationObserver(function(mutations) {
 		mutations.forEach(function(mutation) {
 			if (mutation.type === 'childList') {
@@ -34,7 +54,5 @@ document.addEventListener("DOMContentLoaded", function() {
 			}
 		});
 	});
-
 	observer.observe(document.body, {childList: true, subtree: true});
-
 }, false);
